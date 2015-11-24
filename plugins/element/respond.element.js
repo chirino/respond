@@ -21,6 +21,7 @@ respond.element.h1 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h1';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-textcolor'] = '';
 		attrs['data-textsize'] = '';
 		attrs['data-textshadowcolor'] = '';
@@ -56,6 +57,7 @@ respond.element.h1 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h1';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-textcolor'] = $(node).attr('textcolor');
 		attrs['data-textsize'] = $(node).attr('textsize');
 		attrs['data-textshadowcolor'] = $(node).attr('textshadowcolor');
@@ -78,6 +80,7 @@ respond.element.h1 = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		attrs['textcolor'] = $(node).attr('data-textcolor');
 		attrs['textsize'] = $(node).attr('data-textsize');
 		attrs['textshadowcolor'] = $(node).attr('data-textshadowcolor');
@@ -116,6 +119,7 @@ respond.element.h2 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h2';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-textcolor'] = '';
 		attrs['data-textsize'] = '';
 		attrs['data-textshadowcolor'] = '';
@@ -151,6 +155,7 @@ respond.element.h2 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h2';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-textcolor'] = $(node).attr('textcolor');
 		attrs['data-textsize'] = $(node).attr('textsize');
 		attrs['data-textshadowcolor'] = $(node).attr('textshadowcolor');
@@ -173,6 +178,7 @@ respond.element.h2 = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		attrs['textcolor'] = $(node).attr('data-textcolor');
 		attrs['textsize'] = $(node).attr('data-textsize');
 		attrs['textshadowcolor'] = $(node).attr('data-textshadowcolor');
@@ -206,6 +212,7 @@ respond.element.h3 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h3';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-textcolor'] = '';
 		attrs['data-textsize'] = '';
 		attrs['data-textshadowcolor'] = '';
@@ -241,6 +248,7 @@ respond.element.h3 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h3';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-textcolor'] = $(node).attr('textcolor');
 		attrs['data-textsize'] = $(node).attr('textsize');
 		attrs['data-textshadowcolor'] = $(node).attr('textshadowcolor');
@@ -263,6 +271,7 @@ respond.element.h3 = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		attrs['textcolor'] = $(node).attr('data-textcolor');
 		attrs['textsize'] = $(node).attr('data-textsize');
 		attrs['textshadowcolor'] = $(node).attr('data-textshadowcolor');
@@ -296,6 +305,7 @@ respond.element.h4 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h4';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-textcolor'] = '';
 		attrs['data-textsize'] = '';
 		attrs['data-textshadowcolor'] = '';
@@ -331,6 +341,7 @@ respond.element.h4 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h4';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-textcolor'] = $(node).attr('textcolor');
 		attrs['data-textsize'] = $(node).attr('textsize');
 		attrs['data-textshadowcolor'] = $(node).attr('textshadowcolor');
@@ -353,6 +364,7 @@ respond.element.h4 = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['syle'] = $(node).attr('data-cssstyle');
 		attrs['textcolor'] = $(node).attr('data-textcolor');
 		attrs['textsize'] = $(node).attr('data-textsize');
 		attrs['textshadowcolor'] = $(node).attr('data-textshadowcolor');
@@ -386,6 +398,7 @@ respond.element.h5 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h5';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-textcolor'] = '';
 		attrs['data-textsize'] = '';
 		attrs['data-textshadowcolor'] = '';
@@ -421,6 +434,7 @@ respond.element.h5 = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-h5';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-textcolor'] = $(node).attr('textcolor');
 		attrs['data-textsize'] = $(node).attr('textsize');
 		attrs['data-textshadowcolor'] = $(node).attr('textshadowcolor');
@@ -443,6 +457,7 @@ respond.element.h5 = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		attrs['textcolor'] = $(node).attr('data-textcolor');
 		attrs['textsize'] = $(node).attr('data-textsize');
 		attrs['textshadowcolor'] = $(node).attr('data-textshadowcolor');
@@ -506,6 +521,7 @@ respond.element.p = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-p';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-textcolor'] = '';
 		attrs['data-textsize'] = '';
 		attrs['data-textshadowcolor'] = '';
@@ -541,6 +557,7 @@ respond.element.p = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-p';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-textcolor'] = $(node).attr('textcolor');
 		attrs['data-textsize'] = $(node).attr('textsize');
 		attrs['data-textshadowcolor'] = $(node).attr('textshadowcolor');
@@ -566,6 +583,7 @@ respond.element.p = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		attrs['textcolor'] = $(node).attr('data-textcolor');
 		attrs['textsize'] = $(node).attr('data-textsize');
 		attrs['textshadowcolor'] = $(node).attr('data-textshadowcolor');
@@ -602,6 +620,7 @@ respond.element.q = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-q';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-textcolor'] = '';
 		attrs['data-textsize'] = '';
 		attrs['data-textshadowcolor'] = '';
@@ -638,6 +657,7 @@ respond.element.q = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-q';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-textcolor'] = $(node).attr('textcolor');
 		attrs['data-textsize'] = $(node).attr('textsize');
 		attrs['data-textshadowcolor'] = $(node).attr('textshadowcolor');
@@ -660,6 +680,7 @@ respond.element.q = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		attrs['textcolor'] = $(node).attr('data-textcolor');
 		attrs['textsize'] = $(node).attr('data-textsize');
 		attrs['textshadowcolor'] = $(node).attr('data-textshadowcolor');
@@ -744,6 +765,7 @@ respond.element.ul = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-ul';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		
 		// append element to the editor
 		respond.editor.append(
@@ -772,6 +794,7 @@ respond.element.ul = {
 			var attrs = [];
 			attrs['data-id'] = $(lis[y]).attr('id');
 			attrs['data-cssclass'] = $(lis[y]).attr('class');
+			attrs['data-cssstyle'] = $(lis[y]).attr('style');
 			attrs['contentEditable'] = 'true';
 			
 			// return element
@@ -808,6 +831,7 @@ respond.element.ul = {
 			var attrs = [];
 			attrs['id'] = $(lis[y]).attr('data-id');
 			attrs['class'] = $(lis[y]).attr('data-cssclass');
+			attrs['style'] = utilities.sanitizeStyle($(lis[y]).attr('data-cssstyle'));
 		
 			// create li
 			html += utilities.element('li', attrs, $(lis[y]).html(), true);
@@ -818,6 +842,7 @@ respond.element.ul = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		
 		// return element
 		return utilities.element('ul', attrs, html);
@@ -898,6 +923,7 @@ respond.element.ol = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-ol';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		
 		// append element to the editor
 		respond.editor.append(
@@ -926,6 +952,7 @@ respond.element.ol = {
 			var attrs = [];
 			attrs['data-id'] = $(lis[y]).attr('id');
 			attrs['data-cssclass'] = $(lis[y]).attr('class');
+			attrs['data-cssstyle'] = $(lis[y]).attr('style');
 			attrs['contentEditable'] = 'true';
 			
 			// return element
@@ -940,6 +967,7 @@ respond.element.ol = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-ol';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		
 		// return element
 		return utilities.element('div', attrs, html);
@@ -962,6 +990,8 @@ respond.element.ol = {
 			attrs['id'] = $(lis[y]).attr('data-id');
 			attrs['class'] = $(lis[y]).attr('data-cssclass');
 		
+			attrs['style'] = utilities.sanitizeStyle($(lis[y]).attr('data-cssstyle'));
+
 			// create li
 			html += utilities.element('li', attrs, $(lis[y]).html());
 			
@@ -971,6 +1001,7 @@ respond.element.ol = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		
 		// return element
 		return utilities.element('ol', attrs, html);
@@ -1235,6 +1266,7 @@ respond.element.table = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-table';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-columns'] = '2';
 		attrs['data-rows'] = '1';
 		
@@ -1274,6 +1306,7 @@ respond.element.table = {
 			var attrs = [];
 			attrs['data-id'] = $(ths[d]).attr('id');
 			attrs['data-cssclass'] = $(ths[d]).attr('class');
+			attrs['data-cssstyle'] = $(ths[d]).attr('style');
 			attrs['contentEditable'] = 'true';
 			
 			// return element
@@ -1284,6 +1317,7 @@ respond.element.table = {
 		var attrs = [];
 		attrs['data-id'] = $(tr).attr('id');
 		attrs['data-cssclass'] = $(tr).attr('class');
+		attrs['data-cssstyle'] = $(tr).attr('style');
 
 		rows += utilities.element('tr', attrs, cells);
 
@@ -1305,6 +1339,7 @@ respond.element.table = {
 				var attrs = [];
 				attrs['data-id'] = $(tds[d]).attr('id');
 				attrs['data-cssclass'] = $(tds[d]).attr('class');
+				attrs['data-cssstyle'] = $(tds[d]).attr('style');
 				attrs['contentEditable'] = 'true';
 				
 				// return element
@@ -1315,6 +1350,7 @@ respond.element.table = {
 			var attrs = [];
 			attrs['data-id'] = $(trs[t]).attr('id');
 			attrs['data-cssclass'] = $(trs[t]).attr('class');
+			attrs['data-cssstyle'] = $(trs[t]).attr('style');
 			
 			rows += utilities.element('tr', attrs, cells);
 		}
@@ -1329,6 +1365,7 @@ respond.element.table = {
 		attrs['data-id'] = $(node).attr('id');
 		attrs['class'] = 'respond-table';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-columns'] = columns;
 		attrs['data-rows'] =  $(node).find('tbody tr').length;
 		
@@ -1344,6 +1381,7 @@ respond.element.table = {
 		// get params
 		var id = $(node).attr('data-id');
   		var cssClass = $(node).attr('data-cssclass');
+  		var cssStyle = $(node).attr('data-cssstyle');
   
   		// html for tag
   		var table = $(node).find('table');
@@ -1364,6 +1402,7 @@ respond.element.table = {
 			var attrs = [];
 			attrs['id'] = $(ths[d]).attr('data-id');
 			attrs['class'] = $(ths[d]).attr('data-cssclass');
+			attrs['style'] = utilities.sanitizeStyle($(ths[d]).attr('data-cssstyle'));
 		
 			// create th
 			html += utilities.element('th', attrs, $(ths[d]).html(), true);
@@ -1374,6 +1413,7 @@ respond.element.table = {
 		var attrs = [];
 		attrs['data-id'] = $(tr).attr('id');
 		attrs['data-cssclass'] = $(tr).attr('class');
+		attrs['data-cssstyle'] = $(tr).attr('style');
 
 		html += utilities.element('tr', attrs, cells);
 				
@@ -1395,6 +1435,7 @@ respond.element.table = {
 				var attrs = [];
 				attrs['id'] = $(tds[d]).attr('data-id');
 				attrs['class'] = $(tds[d]).attr('data-cssclass');
+				attrs['style'] = utilities.sanitizeStyle($(tds[d]).attr('data-cssstyle'));
 			
 				// create td
 				cells += utilities.element('td', attrs, $(tds[d]).html(), true);
@@ -1405,6 +1446,7 @@ respond.element.table = {
 			var attrs = [];
 			attrs['id'] = $(trs[t]).attr('data-id');
 			attrs['class'] = $(trs[t]).attr('data-cssclass');
+			attrs['style'] = utilities.sanitizeStyle($(trs[t]).attr('data-cssstyle'));
 
 			html += utilities.element('tr', attrs, cells);
 			
@@ -1447,6 +1489,7 @@ respond.element.hr = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-hr';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		
 		// append element to the editor
 		respond.editor.append(
@@ -1473,6 +1516,7 @@ respond.element.hr = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-hr';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		
 		// return element
 		return utilities.element('div', attrs, html);
@@ -1492,6 +1536,7 @@ respond.element.hr = {
 		var attrs = [];
 		attrs['id'] = id;
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		
 		// return element
 		return utilities.element('hr', attrs, html);
@@ -1626,6 +1671,7 @@ respond.element.image = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-image';
 		attrs['data-cssclass'] = 'respond-image';
+		attrs['data-cssstyle'] = '';
 		attrs['data-alt'] = '';
 		attrs['data-imgcssclass'] = '';
 		attrs['data-display'] = 'left';
@@ -1740,6 +1786,7 @@ respond.element.image = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-image';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-alt'] = alt;
 		attrs['data-imgcssclass'] = imgcssclass;
 		attrs['data-display'] = display;
@@ -1760,6 +1807,7 @@ respond.element.image = {
 		var id = $(node).attr('data-id');
   		var display = $(node).attr('data-display');
   		var cssClass = $(node).attr('data-cssclass');
+  		var cssStyle = $(node).attr('data-cssstyle');
   		var alt = $(node).attr('data-alt') || '';
   		var imgcssclass = $(node).attr('data-imgcssclass') || '';
   		var link = $(node).attr('data-link') || '';
@@ -1909,6 +1957,7 @@ respond.element.pre = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-pre';
 		attrs['data-cssclass'] = '';
+		attrs['data-cssstyle'] = '';
 		attrs['data-description'] = 'PRE';
 		
 		// append element to the editor
@@ -1943,6 +1992,7 @@ respond.element.pre = {
 		attrs['data-id'] = id;
 		attrs['class'] = 'respond-pre';
 		attrs['data-cssclass'] = $(node).attr('class');
+		attrs['data-cssstyle'] = $(node).attr('style');
 		attrs['data-description'] = description;
 		
 		// return element
@@ -1957,6 +2007,7 @@ respond.element.pre = {
 		var attrs = [];
 		attrs['id'] = $(node).attr('data-id');
 		attrs['class'] = $(node).attr('data-cssclass');
+		attrs['style'] = utilities.sanitizeStyle($(node).attr('data-cssstyle'));
 		attrs['description'] = $(node).attr('data-description');
 		attrs['respond-pre'] = 'true';
 		

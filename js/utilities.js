@@ -488,6 +488,17 @@ var utilities = {
 	
 		return display;
 	},
+
+	// makes sure a style end with a ;
+	sanitizeStyle:function(value) {
+		if(value != null && value != undefined){
+			value = value.trim();
+			if( value.indexOf(";", value.length - 1) == -1 ) {
+				value = value+";"
+			}
+		}
+		return value;
+	},
 	
 	// generates an element 
 	element:function(tag, attrs, html, translate){
