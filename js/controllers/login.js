@@ -66,6 +66,9 @@
 								
 						});
 						
+						$('head').append('<script src="site/components/lib/webcomponentsjs/webcomponents-lite.min.js"></script>');
+						$('head').append('<link rel="import" href="site/components/respond-build.html">');
+
 						// pre-cache editor 
 						Editor.list(function(data){
 		
@@ -86,6 +89,7 @@
 							
 							// holds loaded scripts
 							var loaded = [];
+							var loadedComponents = [];
 							
 							// load scripts for all plugins
 							for(x=0; x<data.length; x++){
@@ -99,6 +103,16 @@
 										if(Setup.debug)console.log('[respond.debug] load plugin script='+url);
 									}
 								}
+
+								if(data[x].component != undefined){
+									var url = Setup.url + '/' + data[x].component;
+									if(loadedComponents.indexOf(url) == -1){
+										$('head').append('<link rel="import" href="'+url+'">');
+										loadedComponents.push(url);
+										if(Setup.debug)console.log('[respond.debug] import component='+url);
+									}
+								}
+								
 								
 							}
 							
