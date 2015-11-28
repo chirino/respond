@@ -1,0 +1,10 @@
+	{
+		"action":	"plugin.imagecard",
+		"tag":		"PLUGIN-IMAGECARD",
+		"title":	"Image Card Plugin",
+		"class":	"plugin-imagecard",
+		"icon":		"fa fa-credit-card draggable",
+		"text":		"",
+		"config":	"plugins/imagecard/config/imagecard.html",
+		"script":	"plugins/imagecard/plugin.imagecard.js"
+	}	

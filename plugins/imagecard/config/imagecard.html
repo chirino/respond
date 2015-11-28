@@ -1,0 +1,43 @@
+<div class="context-body">
+
+	<h2>{{'Element' | i18next}} <a class="plugin-remove">{{'Remove' | i18next}}</a></h2>
+	
+	<div class="context-block">
+	
+		<div class="form-group">
+			<label for="id">{{'Id' | i18next}}</label>
+			<input name="id" type="text" maxlength="128" class="form-control" 
+				ng-model="node.id">
+		</div>
+		
+		<div class="form-group">
+			<label for="class">{{'CSS Class' | i18next}}</label>
+			<input name="cssClass" type="text" maxlength="128" class="form-control" 
+				ng-model="node.cssclass">
+		</div>
+	
+	</div>
+	<!-- /.context-block -->
+	
+	<h2>{{'Attributes' | i18next}}</h2>
+	
+	<div class="context-block">
+	
+		<div class="form-group">
+			<label for="node.mls">{{'Image' | i18next}}</label>
+				<input name="node.img" type="text" maxlength="128" class="form-control" 
+					ng-model="node.img">
+		</div>
+		<div class="form-group">
+			<label for="node.href">{{'Link' | i18next}}</label>
+				<input name="node.href" type="text" maxlength="128" class="form-control" 
+					ng-model="node.href">
+		</div>
+	
+	</div>
+	<!-- /.context-block -->
+	
+
+</div>
+<!-- /.context-body -->
+	

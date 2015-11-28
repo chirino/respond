@@ -1,0 +1,102 @@
+<dom-module id="plugin-imagecard">
+
+    <link rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Lato%3A300%2C700%7CRoboto%3A700%2C300%2C400&#038;ver=3.1' type='text/css' media='all' />
+    <style>
+        :host {
+          display: block;
+          position: relative;
+          padding: 0px;
+          width: 100%;
+        }
+
+        .card {
+            color: #1a212b;
+            margin: 0 auto;
+            max-width: 500px;
+            overflow: hidden;
+            padding: 0 0 40px;
+            position: relative;
+            text-align: center;
+            background-color: #fff;
+            font-family: 'Lato', sans-serif;
+            cursor: pointer;
+        }
+
+        .card-sash {
+            -moz-transform:    rotate(45deg);
+            -ms-transform:     rotate(45deg);
+            -o-transform:      rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            background-color: #d23836;
+            color: #fff;
+            font-size: 9px !important;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 6px 12px;
+            position: absolute;
+            right: -40px;
+            text-align: center;
+            text-transform: uppercase;
+            top: 30px;
+            width: 160px;
+        }
+
+        .card-title {
+            border-bottom: 1px solid #e5e5e5;
+            display: inline-block;
+            font-size: 24px !important;
+            margin: 0px auto 12px;
+            padding: 12px 32px;
+        }
+
+        /* when inserted in the respond editor, it's styles are messing us up :( */
+        div.card div.text[contentEditable=true] {
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: auto !important;
+        }
+
+    </style>
+
+    <template>
+        <div class="card">
+            <img src$="{{img}}" class="img-responsive">
+            <div class="text card-sash">{{sash}}</div>
+            <div class="text card-title">{{title}}</div>
+            <div class="text card-text"></div>
+        </div>
+     </template>
+</dom-module>
+
+<script>
+  Polymer({
+        is: "plugin-imagecard",
+        properties: {
+            title: { type: String },
+            sash: { type: String },
+            text: { type: String },
+            img: { type: String },
+            href: { type: String },
+            mode: { type: String },
+        },
+        listeners: {
+            'click': 'clickEvent'
+        },
+        attached:function(){
+            var root = this.shadowRoot || this;
+            if (this.mode == "edit" ) {
+                $(root).find(".text").attr("contentEditable", "true")
+            }
+            $(root).find(".card-text").html(this.text)
+        },
+        clickEvent: function() {
+            if (this.mode == "edit" ) {
+                console.log("edit click")
+            } else {
+                if( this.href ) {
+                    window.location.href = this.href;
+                }
+            }
+        },
+    });
+</script>
